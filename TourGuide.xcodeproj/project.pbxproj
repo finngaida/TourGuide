@@ -16,22 +16,8 @@
 		CC2736E317DA85C900856684 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2736E117DA85C900856684 /* Main.storyboard */; };
 		CC2736E617DA85C900856684 /* FGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2736E517DA85C900856684 /* FGViewController.m */; };
 		CC2736E817DA85C900856684 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2736E717DA85C900856684 /* Images.xcassets */; };
-		CC2736EF17DA85C900856684 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2736EE17DA85C900856684 /* XCTest.framework */; };
-		CC2736F017DA85C900856684 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2736CF17DA85C900856684 /* Foundation.framework */; };
-		CC2736F117DA85C900856684 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2736D317DA85C900856684 /* UIKit.framework */; };
-		CC2736F917DA85C900856684 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC2736F717DA85C900856684 /* InfoPlist.strings */; };
-		CC2736FB17DA85C900856684 /* TourGuideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2736FA17DA85C900856684 /* TourGuideTests.m */; };
+		CCBC781217DA89F900D9C19A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCBC781117DA89F900D9C19A /* MapKit.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CC2736F217DA85C900856684 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CC2736C417DA85C900856684 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CC2736CB17DA85C900856684;
-			remoteInfo = TourGuide;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CC2736CC17DA85C900856684 /* TourGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,11 +34,8 @@
 		CC2736E417DA85C900856684 /* FGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGViewController.h; sourceTree = "<group>"; };
 		CC2736E517DA85C900856684 /* FGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FGViewController.m; sourceTree = "<group>"; };
 		CC2736E717DA85C900856684 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CC2736ED17DA85C900856684 /* TourGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TourGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2736EE17DA85C900856684 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		CC2736F617DA85C900856684 /* TourGuideTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TourGuideTests-Info.plist"; sourceTree = "<group>"; };
-		CC2736F817DA85C900856684 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CC2736FA17DA85C900856684 /* TourGuideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TourGuideTests.m; sourceTree = "<group>"; };
+		CCBC781117DA89F900D9C19A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,19 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCBC781217DA89F900D9C19A /* MapKit.framework in Frameworks */,
 				CC2736D217DA85C900856684 /* CoreGraphics.framework in Frameworks */,
 				CC2736D417DA85C900856684 /* UIKit.framework in Frameworks */,
 				CC2736D017DA85C900856684 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC2736EA17DA85C900856684 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC2736EF17DA85C900856684 /* XCTest.framework in Frameworks */,
-				CC2736F117DA85C900856684 /* UIKit.framework in Frameworks */,
-				CC2736F017DA85C900856684 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				CC2736D517DA85C900856684 /* TourGuide */,
-				CC2736F417DA85C900856684 /* TourGuideTests */,
 				CC2736CE17DA85C900856684 /* Frameworks */,
 				CC2736CD17DA85C900856684 /* Products */,
 			);
@@ -93,7 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				CC2736CC17DA85C900856684 /* TourGuide.app */,
-				CC2736ED17DA85C900856684 /* TourGuideTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +73,7 @@
 		CC2736CE17DA85C900856684 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CCBC781117DA89F900D9C19A /* MapKit.framework */,
 				CC2736CF17DA85C900856684 /* Foundation.framework */,
 				CC2736D117DA85C900856684 /* CoreGraphics.framework */,
 				CC2736D317DA85C900856684 /* UIKit.framework */,
@@ -134,24 +107,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CC2736F417DA85C900856684 /* TourGuideTests */ = {
-			isa = PBXGroup;
-			children = (
-				CC2736FA17DA85C900856684 /* TourGuideTests.m */,
-				CC2736F517DA85C900856684 /* Supporting Files */,
-			);
-			path = TourGuideTests;
-			sourceTree = "<group>";
-		};
-		CC2736F517DA85C900856684 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CC2736F617DA85C900856684 /* TourGuideTests-Info.plist */,
-				CC2736F717DA85C900856684 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,24 +127,6 @@
 			productReference = CC2736CC17DA85C900856684 /* TourGuide.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CC2736EC17DA85C900856684 /* TourGuideTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CC27370117DA85C900856684 /* Build configuration list for PBXNativeTarget "TourGuideTests" */;
-			buildPhases = (
-				CC2736E917DA85C900856684 /* Sources */,
-				CC2736EA17DA85C900856684 /* Frameworks */,
-				CC2736EB17DA85C900856684 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CC2736F317DA85C900856684 /* PBXTargetDependency */,
-			);
-			name = TourGuideTests;
-			productName = TourGuideTests;
-			productReference = CC2736ED17DA85C900856684 /* TourGuideTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,11 +136,6 @@
 				CLASSPREFIX = FG;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Finn Gaida";
-				TargetAttributes = {
-					CC2736EC17DA85C900856684 = {
-						TestTargetID = CC2736CB17DA85C900856684;
-					};
-				};
 			};
 			buildConfigurationList = CC2736C717DA85C900856684 /* Build configuration list for PBXProject "TourGuide" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -219,7 +151,6 @@
 			projectRoot = "";
 			targets = (
 				CC2736CB17DA85C900856684 /* TourGuide */,
-				CC2736EC17DA85C900856684 /* TourGuideTests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,14 +163,6 @@
 				CC2736E817DA85C900856684 /* Images.xcassets in Resources */,
 				CC2736DA17DA85C900856684 /* InfoPlist.strings in Resources */,
 				CC2736E317DA85C900856684 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC2736EB17DA85C900856684 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC2736F917DA85C900856684 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,23 +179,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC2736E917DA85C900856684 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC2736FB17DA85C900856684 /* TourGuideTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CC2736F317DA85C900856684 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CC2736CB17DA85C900856684 /* TourGuide */;
-			targetProxy = CC2736F217DA85C900856684 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CC2736D817DA85C900856684 /* InfoPlist.strings */ = {
@@ -289,14 +196,6 @@
 				CC2736E217DA85C900856684 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CC2736F717DA85C900856684 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CC2736F817DA85C900856684 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -333,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -364,7 +263,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -396,46 +295,6 @@
 			};
 			name = Release;
 		};
-		CC27370217DA85C900856684 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TourGuide.app/TourGuide";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TourGuide/TourGuide-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "TourGuideTests/TourGuideTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		CC27370317DA85C900856684 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TourGuide.app/TourGuide";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TourGuide/TourGuide-Prefix.pch";
-				INFOPLIST_FILE = "TourGuideTests/TourGuideTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -455,14 +314,7 @@
 				CC27370017DA85C900856684 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		CC27370117DA85C900856684 /* Build configuration list for PBXNativeTarget "TourGuideTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC27370217DA85C900856684 /* Debug */,
-				CC27370317DA85C900856684 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
