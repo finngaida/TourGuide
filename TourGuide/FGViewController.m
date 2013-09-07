@@ -8,19 +8,47 @@
 
 #import "FGViewController.h"
 
+
+@interface FGViewController () <UISearchBarDelegate>
+
+@property(strong,nonatomic)UISearchBar *searchBar;
+
+@end
+
 @implementation FGViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     [[FGStuffCalculator new] logSurroundingPlaces];
+    
+    self.searchBar = [UISearchBar new];
+    self.searchBar.delegate = self;
+    self.navigationItem.titleView = self.searchBar;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+-(void)startSearch:(NSString *)query{
+    NSLog(@"Searched for %@",query);
+
 }
 
+
+
+
+-(void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar{
+    [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelledSearch:)]];
+    
+}
+
+-(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+    [self startSearch:searchBar.text];
+    
+    [self cancelledSearch:searchBar];
+}
+
+-(void)cancelledSearch:(id)sender{
+    [self.searchBar resignFirstResponder];
+    [self.navigationItem setRightBarButtonItem:nil];
+}
 @end
