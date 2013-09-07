@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface FGStuffCalculator : NSObject <CLLocationManagerDelegate> {
     CLLocationManager *manager;
