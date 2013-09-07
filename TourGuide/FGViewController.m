@@ -8,16 +8,13 @@
 
 #import "FGViewController.h"
 
-@interface FGViewController ()
-
-@end
-
 @implementation FGViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    [[FGStuffCalculator new] logSurroundingPlaces];
 }
 
 - (void)didReceiveMemoryWarning
