@@ -38,7 +38,7 @@
 
 -(void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar{
     [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelledSearch:)]];
-    
+    NSLog(@"begin");
 }
 
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
