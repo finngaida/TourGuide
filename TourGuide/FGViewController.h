@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "FGStuffCalculator.h"
 
 @interface FGViewController : UIViewController
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end

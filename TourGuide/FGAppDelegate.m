@@ -12,7 +12,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Hallo Daniel!
+    // Hallo Berlin!
     return YES;
 }
 							

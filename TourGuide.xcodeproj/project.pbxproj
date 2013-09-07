@@ -17,6 +17,7 @@
 		CC2736E617DA85C900856684 /* FGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2736E517DA85C900856684 /* FGViewController.m */; };
 		CC2736E817DA85C900856684 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2736E717DA85C900856684 /* Images.xcassets */; };
 		CCBC781217DA89F900D9C19A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCBC781117DA89F900D9C19A /* MapKit.framework */; };
+		CCBC781517DA933700D9C19A /* FGStuffCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBC781417DA933700D9C19A /* FGStuffCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		CC2736E717DA85C900856684 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CC2736EE17DA85C900856684 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CCBC781117DA89F900D9C19A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CCBC781317DA933700D9C19A /* FGStuffCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGStuffCalculator.h; sourceTree = "<group>"; };
+		CCBC781417DA933700D9C19A /* FGStuffCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGStuffCalculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				CC2736E117DA85C900856684 /* Main.storyboard */,
 				CC2736E417DA85C900856684 /* FGViewController.h */,
 				CC2736E517DA85C900856684 /* FGViewController.m */,
+				CCBC781317DA933700D9C19A /* FGStuffCalculator.h */,
+				CCBC781417DA933700D9C19A /* FGStuffCalculator.m */,
 				CC2736E717DA85C900856684 /* Images.xcassets */,
 				CC2736D617DA85C900856684 /* Supporting Files */,
 			);
@@ -174,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC2736DC17DA85C900856684 /* main.m in Sources */,
+				CCBC781517DA933700D9C19A /* FGStuffCalculator.m in Sources */,
 				CC2736E017DA85C900856684 /* FGAppDelegate.m in Sources */,
 				CC2736E617DA85C900856684 /* FGViewController.m in Sources */,
 			);
@@ -217,6 +223,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Finn Gaida (CS66KLRFPY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -234,6 +241,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "6A7BCAAF-F1F7-487C-ADF3-38795A1D70B1";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -254,6 +262,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Finn Gaida (CS66KLRFPY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -264,6 +273,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PROVISIONING_PROFILE = "6A7BCAAF-F1F7-487C-ADF3-38795A1D70B1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -274,10 +284,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Finn Gaida (CS66KLRFPY)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TourGuide/TourGuide-Prefix.pch";
 				INFOPLIST_FILE = "TourGuide/TourGuide-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6A7BCAAF-F1F7-487C-ADF3-38795A1D70B1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -287,10 +299,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Finn Gaida (CS66KLRFPY)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TourGuide/TourGuide-Prefix.pch";
 				INFOPLIST_FILE = "TourGuide/TourGuide-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6A7BCAAF-F1F7-487C-ADF3-38795A1D70B1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
