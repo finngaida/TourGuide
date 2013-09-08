@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		69C9C06F17DAFB930020DCD6 /* FGSight.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C9C06E17DAFB930020DCD6 /* FGSight.m */; };
+		CC0ECE2D17DB166F00D0D2A8 /* Berlin.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CC0ECE2C17DB166F00D0D2A8 /* Berlin.gpx */; };
 		CC2736D017DA85C900856684 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2736CF17DA85C900856684 /* Foundation.framework */; };
 		CC2736D217DA85C900856684 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2736D117DA85C900856684 /* CoreGraphics.framework */; };
 		CC2736D417DA85C900856684 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2736D317DA85C900856684 /* UIKit.framework */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		69C9C06D17DAFB930020DCD6 /* FGSight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGSight.h; sourceTree = "<group>"; };
 		69C9C06E17DAFB930020DCD6 /* FGSight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGSight.m; sourceTree = "<group>"; };
+		CC0ECE2C17DB166F00D0D2A8 /* Berlin.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Berlin.gpx; path = ../Berlin.gpx; sourceTree = "<group>"; };
 		CC2736CC17DA85C900856684 /* TourGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2736CF17DA85C900856684 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CC2736D117DA85C900856684 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,6 +132,7 @@
 		CC2736D617DA85C900856684 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CC0ECE2C17DB166F00D0D2A8 /* Berlin.gpx */,
 				CC2736D717DA85C900856684 /* TourGuide-Info.plist */,
 				CC2736D817DA85C900856684 /* InfoPlist.strings */,
 				CC2736DB17DA85C900856684 /* main.m */,
@@ -214,6 +217,7 @@
 				CCBC781D17DAFAFB00D9C19A /* Icon-ios7.png in Resources */,
 				CCBC782017DAFAFB00D9C19A /* Icon~itunes.png in Resources */,
 				CCBC781F17DAFAFB00D9C19A /* Icon@2x.png in Resources */,
+				CC0ECE2D17DB166F00D0D2A8 /* Berlin.gpx in Resources */,
 				CC2736E817DA85C900856684 /* Images.xcassets in Resources */,
 				CCBC782217DAFD1600D9C19A /* logo.png in Resources */,
 				CCBC782717DAFE2400D9C19A /* splash@2x.png in Resources */,
@@ -296,7 +300,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "71EF1FA5-921C-4C57-B6A2-E46B04073681";
+				PROVISIONING_PROFILE = "6A7BCAAF-F1F7-487C-ADF3-38795A1D70B1";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -328,7 +332,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PROVISIONING_PROFILE = "71EF1FA5-921C-4C57-B6A2-E46B04073681";
+				PROVISIONING_PROFILE = "6A7BCAAF-F1F7-487C-ADF3-38795A1D70B1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -344,7 +348,7 @@
 				GCC_PREFIX_HEADER = "TourGuide/TourGuide-Prefix.pch";
 				INFOPLIST_FILE = "TourGuide/TourGuide-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "71EF1FA5-921C-4C57-B6A2-E46B04073681";
+				PROVISIONING_PROFILE = "6A7BCAAF-F1F7-487C-ADF3-38795A1D70B1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -359,7 +363,7 @@
 				GCC_PREFIX_HEADER = "TourGuide/TourGuide-Prefix.pch";
 				INFOPLIST_FILE = "TourGuide/TourGuide-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "71EF1FA5-921C-4C57-B6A2-E46B04073681";
+				PROVISIONING_PROFILE = "6A7BCAAF-F1F7-487C-ADF3-38795A1D70B1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

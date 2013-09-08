@@ -20,11 +20,24 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [[FGStuffCalculator new] logSurroundingPlaces];
+    
+    FGStuffCalculator *c = [FGStuffCalculator new];
+    [c logSurroundingPlaces];
     
     self.searchBar = [UISearchBar new];
     self.searchBar.delegate = self;
     self.navigationItem.titleView = self.searchBar;
+    
+    self.mapView.showsUserLocation = YES;
+    
+    
+    [c fetchCurrentLocationWithHandler:^(CLLocation *location, NSError *error) {
+    
+        [self.mapView setRegion:MKCoordinateRegionMake(location.coordinate, MKCoordinateSpanMake(1, 1)) animated:NO];
+        
+        NSLog(@"Google response: %@", [c fetchLocalPlacemarksUsingGooglePlacesAroundLocation:location radius:5000]);
+        
+    }];
 }
 
 

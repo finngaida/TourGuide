@@ -6,8 +6,7 @@
 //  Copyright (c) 2013 Finn Gaida. All rights reserved.
 //
 
-// For reverse geocoding
-typedef void (^FGLocationFetchCompletionHandler)(NSString *locationString, NSError *error);
+
 #import "FGStuffCalculator.h"
 
 @implementation FGStuffCalculator
@@ -32,9 +31,21 @@ typedef void (^FGLocationFetchCompletionHandler)(NSString *locationString, NSErr
     geocoder = [[CLGeocoder alloc] init];
     [geocoder reverseGeocodeLocation:manager.location completionHandler:^(NSArray *placemarks, NSError *err) {
         
-        NSLog(@"%@", placemarks);
+        handler(manager.location, err);
         
     }];
+}
+
+- (NSDictionary *)fetchLocalPlacemarksUsingGooglePlacesAroundLocation:(CLLocation *)location radius:(NSInteger)radius {
+    
+    NSString *urlString = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=%f,%f&radius=%i&sensor=true&key=%@", location.coordinate.latitude, location.coordinate.longitude, radius    , @"AIzaSyCNeUocMmEPOIiUf3WhpGBLTiHwqBERhxg"];
+    
+    NSLog(@"Google URL: %@", urlString);
+    
+    NSError *e;
+    NSDictionary *response = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]] options:NSJSONReadingMutableLeaves error:&e];
+    
+    return response;
 }
 
 - (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
